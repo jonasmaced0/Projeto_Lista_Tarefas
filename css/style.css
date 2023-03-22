@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    background-color: #ddd;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    
+}
+
+input {
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+button.add {
+    width: 20%;
+    cursor: pointer;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+}
+
+.item.clicado{
+    background: #d6f6d9;
+}
+
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-icone {
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.item-nome {
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.item-botao {
+    flex: 25%;
+    
+}
+
+.delete{
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.mdi-check-circle{
+    color: green;
+}
